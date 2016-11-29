@@ -14,7 +14,7 @@ var bio = {
 	},
 	"welcomeMessage": "I work in educational publishing, and I'm starting out in front-end development.",
 	"biopic": "images/marta.jpg"
-}
+};
 
 var work = {
 	"jobs": [
@@ -35,7 +35,7 @@ var work = {
 			"url": "http://torontoist.com/"
 		}
 	]
-}
+};
 
 var projects = {
 	"projects": [
@@ -54,7 +54,7 @@ var projects = {
 			"url": "https://github.com/martakule/SimonSays"
 		}
 	]
-}
+};
 
 var education = {
 	"schools": [
@@ -89,7 +89,7 @@ var education = {
 			"url": "https://www.coursera.org/learn/microeconomics"
 		}
 	]
-}
+};
 
 // Pulls bio information from an object above and appends it to header and footer.
 bio.display = function () {
@@ -119,7 +119,7 @@ bio.display = function () {
 	}
 
 	$("#footerContacts").append(allContacts);
-}
+};
 
 bio.display();
 
@@ -190,13 +190,13 @@ education.display = function () {
 			$(".education-entry:last").append(formattedTitle + formattedSchool + formattedDates);
 		});
 	}
-}
+};
 
 education.display();
 
 // The internationalize button that was part of the course.
 $("#main").append(internationalizeButton);
-var name = bio.name
+var name = bio.name;
 
 function inName(name) {
     var old_name = name;
@@ -205,7 +205,7 @@ function inName(name) {
     names[0] = names[0].slice(0,1).toUpperCase() + names[0].slice(1).toLowerCase();
     finalName = names.join(" ");
     return finalName;
-};
+}
 
 $("#mapDiv").append(googleMap);
 initializeMap();
